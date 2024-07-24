@@ -2,321 +2,699 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VAST - Make an Impression & Drive More Downloads With VAST</title>
 
-  <title>Vision City Connect</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <!-- 
+    - #HEADER
+  -->
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span>Vision City Connect</span>
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="./about.html">About</a></li>
-          <li><a class="nav-link scrollto" href="./services.html">Services</a></li>
-          <li><a class="nav-link scrollto" href="./contact.html">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center">
-
+  <header class="header" data-header>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Welcome to Vision CIty Connect Solutions</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400"> Unlocking Tomorrow's Urban Oasis: Crafting the Blueprint for a Brilliant Smart City </h2>
-          <div data-aos="fade-up" data-aos-delay="600">
-            <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Get Started</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
-        </div>
-      </div>
+
+      <a href="#" class="logo">VAST</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list container">
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#features" class="navbar-link" data-nav-link>Features</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li>
+            <a href="#app" class="navbar-link" data-nav-link>App</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
     </div>
-
-  </section><!-- End Hero -->
-
-  <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-
-      <div class="container" data-aos="fade-up">
-        <div class="row gx-0">
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>Who We Are</h3>
-              <h2>We specialize in the comprehensive design and engineering of intelligent urban environments, crafting smart cities from their conceptualization to fruition</h2>
-              <p>
-                At Vision City Connect, our primary objective revolves around transforming the smart city vision into a tangible reality. To achieve this, our approach entails meticulous vetting and collaboration with top-tier IoT, Smart Building, and Security enterprises across the globe. By seamlessly aligning your project requirements with these industry leaders, we ensure a harmonious fusion of innovation and practicality.
-              </p>
-              <p>.</p>
-              <div class="text-center text-lg-start">
-                <a href="about.html" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Our Approch</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/smartcity78.jpg" class="img-fluid" alt="">
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- End About Section -->
-     <!-- ======= Counts Section ======= -->
-    
-    <!-- ======= Values Section ======= -->
-    <section id="values" class="values">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Our Values</h2>
-          <p>Transforming visions into realities through strategic partnerships and seamless innovation.</p>
-        </header>
-
-        <div class="row">
-
-          <div class="col-lg-4">
-            <div class="box" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/values-1.png" class="img-fluid" alt="">
-              <h3>Our Vision</h3>
-              <p> Enabling smarter, safer, and more connected cities through cutting-edge collaborations and solutions</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="fade-up" data-aos-delay="400">
-              <img src="assets/img/values-2.png" class="img-fluid" alt="">
-              <h3>Our Mission</h3>
-              <p>To empower cities with intelligent technologies, enhancing efficiency, sustainability, and quality of life</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="fade-up" data-aos-delay="600">
-              <img src="assets/img/values-3.png" class="img-fluid" alt="">
-              <h3>Our Approach</h3>
-              <p> Our Smart Cities Tech Framework merges essential elements and innovative applications for holistic, connected city experiences.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Values Section -->
-
-   
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Services</h2>
-          <p>Vision City Connect Smart city services encompass efficiency, sustainability, innovation, connectivity, safety, quality, mobility, engagement, resilience, and growth.</p>
-        </header>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box blue">
-              <i class="ri-computer-line icon"></i>
-              <h3>Smart Mobility Solutions</h3>
-              <p>Creating innovative transportation strategies that incorporate intelligent transportation systems, 
-                traffic management, electric vehicle infrastructure, and seamless multi-modal transit options.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box orange">
-              <i class="ri-global-line icon"></i>
-              <h3>Sustainable Energy Planning</h3>
-              <p>Developing strategies for integrating renewable energy sources, 
-                optimizing energy consumption in buildings and infrastructure, and implementing smart grid technologies for energy efficiency.</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box green">
-              <i class="ri-brush-2-fill icon"></i>
-              <h3>Cybersecurity and Privacy Assurance</h3>
-              <p> Ensuring the security and privacy of smart city systems by offering comprehensive cybersecurity assessments, 
-                risk mitigation strategies, and privacy frameworks for data protection</p>
-              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-        <a style="margin-top: 50px;" class="cta-btn"  href="./services.html">Explore all services</a>
-      </div>
-      
-    </section><!-- End Services Section -->
+  </header>
 
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Partners we Trust</h2>
-          <p>Our partner network is expanding, including collaborators in IoT, AI, privacy, and security networks. This expansion enables us to provide scalable smart city solutions.</p>
-        </header>
-
-        <div class="clients-slider swiper-container">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/parter1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/cisco2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/partner3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/partner4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/partenre5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/partner6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/partnersr7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/partner8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      
 
 
-    </section><!-- End Clients Section -->
 
+  <main>
+    <article>
 
-  </main><!-- End #main -->
+      <!-- 
+        - #HERO
+      -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+      <section class="section hero" aria-label="hero" id="home">
+        <div class="container">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
-              <span>Vision City Connect</span>
-            </a>
-            <p>Cities are like puzzles, and at Vision City Connect, we have the masterpieces in our sights. Picture this: our savvy team of urban visionaries, 
-              seasoned experts, and a treasure trove of strategic partnerships. Together, we're the architects of tomorrow's Smart Cities. We're not just selling services; we're selling a vision – one where innovation meets infrastructure, and dreams meet design. From the pilot spark to a grand, transformative blaze, we're the fuel to your urban revolution. Join us in reshaping your cityscape, because the future is smart, and it's waiting for your city to shine
-              </p>
-            
-          </div>
+          <div class="hero-content">
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="./index.html">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="./about.html">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="./services.html">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="./faq.html">FAQ's</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="./faq.html">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="./faq.html">Privacy policy</a></li>
-            </ul>
-          </div>
+            <p class="section-subtitle">Best Mobile App 12 day free</p>
 
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="./services.html">Smart Mobility Solution</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="./services.html">Sustainable Energy Planning</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="./services.html">Cyber Security & Assurance</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="./services.html">AI Powered Citizen Engagement</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="./services.html">Talent Recruitment for Urban Innovation</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="./services.html">Personalized Training for Urban Excellence</a></li>
-            </ul>
-          </div>
+            <h1 class="h1 hero-title">Make an Impression & Drive More Downloads With VAST</h1>
 
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>
-              4901 Seminary Rd  <br>
-              Alexandria, VA 22311<br>
-               <br><br>
-              <strong>Phone:</strong> 1800 251 2195<br>
-              <strong>Email:</strong> Abel@visionioconnect.com<br>
+            <p class="section-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu ut labore et
+              dolore magna
+              aliqua. Ut enim ad minim veniamquis nostrud
             </p>
 
+            <ul class="btn-list">
+
+              <li>
+                <a href="#" class="btn-item-link" aria-label="Download from app store">
+                  <img src="./assets/images/app-store.png" width="185" height="69" alt="app store" class="img">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="btn-item-link" aria-label="Download from play store">
+                  <img src="./assets/images/play-store.png" width="185" height="69" alt="play store" class="img">
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="769" height="804" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle">Our App Feature</p>
+
+          <h2 class="h2 section-title">Awesome Features</h2>
+
+          <ul class="features-list">
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="create-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Easy to Edit</h3>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit cons ectetur adipiscing
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Fully Secure</h3>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit cons ectetur adipiscing
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="settings-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Manage User</h3>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit cons ectetur adipiscing
+                </p>
+
+              </div>
+            </li>
+
+            <li class="features-item">
+              <div class="features-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cube-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h3 card-title">Free Trial</h3>
+
+                <p class="card-text">
+                  Lorem ipsum dolor sit cons ectetur adipiscing
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="1262" height="1357" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Our Acquaintance</p>
+
+            <h2 class="h2 section-title">We Are Trusted By Thousands Of People</h2>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullamcorper mattis,
+              pulvinar
+              dapibus leo. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullam
+              corpe
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="item-icon">
+                  <ion-icon name="folder" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Device Quality Design</h3>
+
+                  <p class="item-text">
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit Lorem ipsum dolor sit amet, consec tetur
+                    adipiscing elit.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon">
+                  <ion-icon name="pie-chart" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Easy to Manage Data</h3>
+
+                  <p class="item-text">
+                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit Lorem ipsum dolor sit amet, consec tetur
+                    adipiscing elit.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-secondary">Discover More</a>
+
           </div>
 
         </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT 2
+      -->
+
+      <section class="section about-2" aria-label="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Cool & Amazing Design</p>
+
+            <h2 class="h2 section-title">We Develop Amazing App For Startups</h2>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullamcorper mattis,
+              pulvinar
+              dapibus leo. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullam
+              corper.
+            </p>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullamcorper mattis,
+              pulvinar
+              dapibus leo. Lorem ipsum dolor.
+            </p>
+
+            <a href="#" class="btn btn-secondary">Discover More</a>
+
+          </div>
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner-2.png" width="1146" height="1226" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #APP
+      -->
+
+      <section class="section app" aria-label="app" id="app">
+        <div class="container">
+
+          <figure class="app-banner">
+            <img src="./assets/images/app.png" width="449" height="608" loading="lazy" alt="app banner" class="w-100">
+          </figure>
+
+          <div class="app-content">
+
+            <p class="section-subtitle">Download Our App</p>
+
+            <h2 class="h2 section-title">Get The App For Free And Start Now</h2>
+
+            <p class="section-text">
+              Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Ut elit tellus, luc tus nec ullamcorper mattis,
+              pulvinar
+              dapibus leo. Lorem ipsum dolor sit amet con Lorem ipsum dolor
+            </p>
+
+            <ul class="btn-list">
+
+              <li>
+                <a href="#" class="btn-item-link" aria-label="Download from app store">
+                  <img src="./assets/images/app-store.png" width="185" height="69" alt="app store" class="img">
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="btn-item-link" aria-label="Download from play store">
+                  <img src="./assets/images/play-store.png" width="185" height="69" alt="play store" class="img">
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Recent Blogs</p>
+
+          <h2 class="h2 section-title">Our Tips And Latest News</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
+                  <img src="./assets/images/blog-1.jpg" width="768" height="558" loading="lazy"
+                    alt="Build A Full Web Chat App From Our Scratch" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-05-22">May 22,2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">2 Comment</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Build A Full Web Chat App From Our Scratch</a>
+                  </h3>
+
+                  <a href="#" class="btn btn-outline">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
+                  <img src="./assets/images/blog-2.jpg" width="768" height="558" loading="lazy"
+                    alt="Brush Strokes Energize Trees In Paintings" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-05-22">May 22,2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">2 Comment</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Brush Strokes Energize Trees In Paintings</a>
+                  </h3>
+
+                  <a href="#" class="btn btn-outline">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
+                  <img src="./assets/images/blog-3.jpg" width="768" height="558" loading="lazy"
+                    alt="Insights on How to Improve Your Teaching." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-05-22">May 22,2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">2 Comment</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Insights on How to Improve Your Teaching.</a>
+                  </h3>
+
+                  <a href="#" class="btn btn-outline">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">VAST</a>
+
+          <p class="section-text">
+            Duis cursus, mi quis viverra ornare, eros dolor interdum nulla utimp erdiet commodo diam libero vitae nibh
+            et jus cursus
+            id rutrum lore imperdiet ut sem vitae risus tristique posuere
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-google"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Core Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Team</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing Plan</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">App Download</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">How It Works</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Get In Touch</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+12023459999" class="item-link">+12023459999</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="mailto:supportvast@gmail.com" class="item-link">supportvast@gmail.com</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+
+            <address class="item-link address">
+              3004 3 rd Ln,<br>
+              Los Angeles, Calnia, 11
+            </address>
+          </li>
+
+        </ul>
+
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Vision City Connect</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-       
-        Designed by <a href="https://visionioconnect.com" target="_blank">Vision IO</a>
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>.
+        </p>
+
       </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
