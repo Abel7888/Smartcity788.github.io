@@ -1,0 +1,337 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/contact_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <link
+    href="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca620f69d7d0aa2818e70_Lately_Favicon_32px.png"
+    rel="shortcut icon" type="image/x-icon">
+    <title>Finance Emerging Tech Solutions</title>
+
+    <style>
+        *{
+        font-family: 'Montserrat', sans-serif,'Noto Sans', sans-serif;
+        }
+        #leadbg{
+            background-color: #e8f8f2;
+        }
+        #leaders img{
+            height:200px;
+            width:200px;
+            border-radius: 100%;
+        }
+        #leaders{
+            width:70%;
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+            grid-template-rows: auto;
+            margin: auto;
+            padding:100px;
+           
+        }
+        #leaders>div{
+            width:auto;
+            /* border:1px solid black; */
+            text-align: center;
+        }
+        #leaders div div{
+            color: #00C66b;
+            font-weight: bold;
+        }
+        #quote{
+            height:85px;
+            width:85px;
+            margin-left: 140px;
+            margin-top:-45px;
+           
+        }
+        #Our-team{
+            background-color:#174C43;
+           margin-top: -45px;
+            
+        }
+        #Our-team h1{
+            color: #00C66b;
+            margin-left: 200px;
+           padding-top: 40px;
+        }
+        #info{
+            font-size: 24px;
+            color:white;
+            width:70%;
+            margin-left: 200px;
+        }
+        #finalbg{
+            background-color: #174C43;
+        }
+        #final{
+            display: flex;
+            padding-top: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        #final img:last-child{
+            height:49px;
+            width:139px;
+            margin-left: 300px;
+            
+        }
+        #final img:first-child{
+            border-radius: 100%;
+            height:120px;
+            width:120px;
+        }
+        #name div:first-child{
+            color: white;
+            font-size: 20px;
+            display: block;
+        }
+        #name div:last-child{
+            font-size: 14px;
+            color:white;
+        }
+        #teambg{
+            background-color: #174C43;
+            height:200px;
+        }
+        #team{
+            text-align: center;
+            padding-top: 50px;
+        }
+        #team strong{
+            color:white;
+            font-size: 44px;
+           
+        }
+        #team p{
+            color:white;
+            font-size: 20px;
+        }
+        @media all and (min-width:320px) and (max-width:768px){
+            #leaders{
+                width:50%;
+                /* border: 1px solid red; */
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:20px;
+                grid-template-rows: auto;
+                margin: auto;
+                margin-right: 250px;
+                padding:0px;
+            
+            }
+            #leaders>div{
+                margin-left: 0px;
+
+            }
+            #teambg{
+                background-color: #174C43;
+                height:auto;
+                padding-bottom: 50px;
+            }
+            #team{
+                text-align: center;
+                padding-top: 50px;
+            }
+            #team strong{
+                color:white;
+                font-size: 44px;
+            
+            }
+            #team p{
+                color:white;
+                font-size: 20px;
+                width: 300px;
+                text-align: center;
+                margin-left: 150px;
+            }
+            #finalbg{
+                background-color: #174C43;
+            }
+            #final{
+                display: flex;
+                flex-direction: column;
+                padding-top: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+            #final img:last-child{
+                height:49px;
+                width:139px;
+                /* margin-left: 300px; */
+                margin-right: 300px;
+                
+            }
+            #final img:first-child{
+                border-radius: 100%;
+                height:120px;
+                width:120px;
+            }
+            #Our-team{
+                background-color:#174C43;
+                margin-top: -45px;
+                    
+            }
+            #Our-team h1{
+                color: #00C66b;
+                margin-left: 200px;
+                padding-top: 40px;
+            }
+            #info{
+                font-size: 20px;
+                color:white;
+                width:50%;
+                margin-left: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="teambg">
+        <div id="team">
+            <strong>Finance Emerging Tech Solutions</strong>
+            <p>Empowering Finance enterprises with innovative emerging tech solutions</p>
+        </div>
+    </div>
+    <div id="leadbg">
+        <div id="leaders">
+            <div>
+                <img src="images/281.jpg" alt="">
+                <h3> Cyber Security Solutions</h3>
+                <div>Finance</div>
+                <p>Implement the latest zero trust cyber security solutions from leader providers</p>
+    
+            </div>
+            <div>
+                <img src="images/282.jpg" alt="">
+                <h3>Digital Identy Verification</h3>
+                <div>Finance</div>
+                <p>AI-powered identity verification that helps banks & financial institutions streamline customer onboarding while providing a more frictionless experience..
+
+
+</p>
+            </div>
+            <div>
+                <img src="images/283.png" alt="">
+                <h3>Digital Twin and Edge Technology</h3>
+                <div>Finance</div>
+                <p>Implement the technology combination where real-time data from financial systems is processed at the source (edge) to 
+                create a virtual replica of a financial asset, process, or entire organization</p>
+            </div>
+            <div>
+                <img src="images/284.png" alt="">
+                <h3>AI & ML Risk Management Solutions</h3>
+                <div>Finace</div>
+                <p>Implement the latest robust AI-driven platform for comprehensive risk assessment, 
+                compliance management, and mitigation. It features a user-friendly interface, real-time analytics, and customizable reporting.</p>
+            </div>
+            <div>
+                <img src="images/285.jpg" alt="">
+                <h3>Quantum Excription</h3>
+                <div>Finance</div>
+                <p>learn more about integrating  cutting-edge technology based on the principles of quantum mechanics to securely encrypt private
+                messages or data you share with your partner, offering a level of security that is theoretically unbreakable </p>
+            </div>
+            <div>
+                <img src="286.jpg" alt="">
+                <h3>Virtual Tour, AR and VR</h3>
+                <div>Finace</div>
+                <p>Learn more about how financial institutions can offer customers interactive experiences, such as virtual 
+                financial advisors or AR-based navigation within bank branches, enhancing both digital and in-person banking services</p>
+            </div>
+            <div>
+                <img src="images/287.jpg" alt="">
+                <h3>Blockchain-Based Transaction Solutions</h3>
+                <div>Property Management </div>
+                <p>Facilitates secure, transparent property transactions, lease agreements, and payment tracking through smart contracts.</p>
+            </div>
+            <div>
+                <img src="images/288.png" alt="">
+                <h3>Predictive Analytics for Operations and Maintenance</h3>
+                <div>Property Management</div>
+                <p>Provides actionable insights on building performance, maintenance needs, and 
+                    occupancy rates. Helps property managers detect equipment issues early, schedule preventive maintenance, </p>
+            </div>
+            <div>
+                <img src="images/3.jpg" alt="">
+                <h3>Gary Vaynerchuk</h3>
+                <div>Entrepreneurial Advisor</div>
+                <p>Marketing mystic. Chairman of VaynerX. CEO of VaynerMedia. 5-Time NYT Bestselling Author. Looooooves wine.</p>
+            </div>
+            <div>
+                <img src="images/3.jpg" alt="">
+                <h3>Chris Breault</h3>
+                <div>Customer Experience Account Executive</div>
+                <p>Award-winning music curator and rock ‘n’ roll podcast host. Soccer beast. Craft beer aficionado. Kate and Chris go waaaaay back.</p>
+            </div>
+            <div>
+                <img src="images/3.jpg" alt="">
+                <h3>Cadi Jordan</h3>
+                <div>Social Media Engagement Lead</div>
+                <p>Connectorpreneur. Marketing and social media strategist. Social selling lead-generation. Empath. Fave game: Two Truths and a Lie.</p>
+            </div>
+            <div>
+                <img src="images/3.jpg" alt="">
+                <h3>Dr. Kaigui Bian</h3>
+                <div>AI Lead</div>
+                <p>Network Computing Assoc. Professor/Director. Computer Science Asst. Chair, EECS Peking University. Obvi smarter than the rest of us</p>
+            </div>
+            <div>
+                <img src="images/3.jpg" alt="">
+                <h3>Alex Wieser</h3>
+                <div>Social Media Advisor</div>
+                <p>Copywriting whippersnapper. Digital marketing persona development. Longest serving employee! Her King Charles Cavalier is supah-cute</p>
+            </div>
+            <div>
+                <img src="images/3.jpg" alt="">
+                <h3>Judy Loehr</h3>
+                <div>Product & Partnerships Advisor</div>
+                <p>SaaS tech veteran (Salesforce + a loooong list of others). Early product build and GTM specialist. VC. Champion of rad female founders.</p>
+            </div>
+        </div>
+    </div>
+    <img id="quote" src="images/3.jpg" alt="">
+    <div id="Our-team">
+        <h1>Your team is our team.</h1>
+        <div id="info">“The experience we’ve had working with the people at Lately is second-to-none. I hesitate to use the term “customer service,” because they feel more like business partners to us. We truly feel like they are invested in our organization’s success.”</div>
+    </div>
+    <div id="finalbg">
+        <div id="final">
+            <img src="images/3.jpg" alt="">
+            <div id="name">
+                <div>Chris Raftery</div>
+                <div>Director of Marketing, SCM Connections</div>
+            </div>
+            
+            <img src="newpic.jpg" alt="">
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script>
+    ipt>
+     $(function () {
+            $("#header").load("nav.html");
+        });
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+   // $(document).on('click', function () {
+   //       $('.navbar-collapse').removeClass("open");
+   //    });
+    document.querySelector(".ready-to-run-block").innerHTML = ''
+</script>
